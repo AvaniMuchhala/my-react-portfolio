@@ -1,0 +1,15 @@
+.nav-item a {
+    color: #A3C4BC;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+    }
+}

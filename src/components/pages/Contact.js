@@ -53,9 +53,17 @@ export default function Contact() {
       setErrorMessage('Name is required.');
       return;
     } 
-    if (!email && e.target.id === 'email') {
-      setErrorMessage('Email is required.');
-      return;
+    if (e.target.id === 'email') {
+      if (!email) {
+        setErrorMessage('Email is required.');
+        return;
+      } else {
+        // Check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+        if (!validateEmail(email)) {
+          setErrorMessage('Email is invalid');
+          return;
+        }
+      }
     }
     if (!message && e.target.id === 'message') {
       setErrorMessage('Message is required.');

@@ -1,9 +1,10 @@
 import React from 'react';
+import resumePDF from '../../assets/resume.pdf';
 
 export default function Resume() {
     return (
         <div>
-            <h1>Resume</h1>
+            <a href={resumePDF} target="_blank">Resume</a>
         </div>
     );
 };
