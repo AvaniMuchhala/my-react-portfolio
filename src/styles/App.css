@@ -13,9 +13,10 @@ html {
 }
 
 body {
+    color: #413C58 !important;
+    background-color: #BFD7B5 !important;
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-color: #413C58;
-    color: #BFD7B5;
+    
 }

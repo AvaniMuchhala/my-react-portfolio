@@ -1,0 +1,10 @@
+/* section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1080px) {
+    section {
+        flex-direction: row !important;
+    }
+} */
