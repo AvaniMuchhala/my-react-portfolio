@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import '../styles/Header.css'
 
 function Header({ currentPage, handlePageChange }) {
+    // Return name header and Navigation bar component
     return (
         <header className="d-flex flex-column align-items-center">
             <h1 className="display-4">Avani Muchhala</h1>

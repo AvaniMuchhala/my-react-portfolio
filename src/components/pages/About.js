@@ -10,6 +10,7 @@ const styles = {
 };
 
 export default function About() {
+  // Return About header, profile image, and paragraph
   return (
     <div className="d-flex flex-column about-div">
       <h1 style={styles.headerStyle}>About Me</h1>

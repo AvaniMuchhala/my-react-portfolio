@@ -17,6 +17,7 @@
     font-size: 1.2rem;
 }
 
+/* Smaller screens - stack image and paragraph vertically */
 #about-section {
     display: flex;
     flex-direction: column;
@@ -24,6 +25,7 @@
     justify-content: center;
 }
 
+/* Larger screens - display image and paragraph horizontally */
 @media screen and (min-width: 768px) {
     #about-section {
         flex-direction: row !important;

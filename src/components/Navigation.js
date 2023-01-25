@@ -2,6 +2,9 @@ import React from 'react';
 import '../styles/Navigation.css' 
 
 function Navigation({ currentPage, handlePageChange }) {
+  // Return navigation bar
+  // When user clicks on page name in navbar, set currentPage state as that page name
+  // Highlight the page name in navbar that is stored in currentPage state
   return (
     <ul className="nav">
       <li className="nav-item">

@@ -3,6 +3,7 @@ import resumePDF from '../../assets/resume.pdf';
 import '../../styles/Resume.css';
 
 export default function Resume() {
+    // Return div with button linked to downloadable resume and list of skills
     return (
         <div className="d-flex flex-column align-items-center">
             <a href={resumePDF} target="_blank"><button className="btn resume-btn"><h2 className="m-0">View My Resume</h2></button></a>

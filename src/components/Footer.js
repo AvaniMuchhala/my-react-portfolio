@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Footer.css'
 
 function Footer() {
+    // Return 3 linked icons for email, LinkedIn, and GitHub
     return (
         <footer>
             <a href="mailto:avani.muchhala@case.edu"><i className="fa-solid fa-envelope footer-icon"></i></a>

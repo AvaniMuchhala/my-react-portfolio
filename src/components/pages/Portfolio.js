@@ -8,6 +8,7 @@ import textEditorImg from '../../assets/text-editor-img.png';
 import weatherDashboardImg from '../../assets/weather-dashboard-img.png';
 import codingQuizImg from '../../assets/coding-quiz-img.png';
 
+// Information about each project (i.e. title, links, images)
 const projects = [
   {
     id: 1,
@@ -54,10 +55,12 @@ const projects = [
 ];
 
 export default function Portfolio() {
+  // Return Portfolio header, and section with all Project components
   return (
     <div className="d-flex flex-column align-items-center">
       <h1>Portfolio</h1>
       <section className="row col-10 d-flex flex-row flex-wrap justify-content-center">
+        {/* For each object in projects array, render Project component passing in title, links, and image URL in the props */}
         {projects.map(project => (
           <Project title={project.title} deployed={project.deployed} github={project.github} image={project.image} key={project.id} />
         ))}

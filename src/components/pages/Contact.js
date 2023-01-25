@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../../styles/Contact.css';
 
 // Helper function to check if email is valid
@@ -33,9 +33,9 @@ export default function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     
-    // Check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    // Check to see if the email is invalid. If so, set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
+      setErrorMessage('Email is invalid.');
       return;
     }
 
@@ -48,24 +48,27 @@ export default function Contact() {
     setErrorMessage('');
   }
 
+  // Set correct error message based on which input field lost focus and does not have text entered
   const handleOnBlur = (e) => {
-    console.log('Input lost focus');
+    // If name input lost focus and empty
     if (!name && e.target.id === 'name') {
       setErrorMessage('Name is required.');
       return;
     } 
+    // If email input lost focus and empty
     if (e.target.id === 'email') {
       if (!email) {
         setErrorMessage('Email is required.');
         return;
       } else {
-        // Check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+        // If email input lost focus and email was provided, check to see if the email is invalid
         if (!validateEmail(email)) {
-          setErrorMessage('Email is invalid');
+          setErrorMessage('Email is invalid.');
           return;
         }
       }
     }
+    // If message input lost focus and empty
     if (!message && e.target.id === 'message') {
       setErrorMessage('Message is required.');
       return;
@@ -73,25 +76,28 @@ export default function Contact() {
   } 
   
   const handleOnFocus = (e) => {
-    console.log('Input has focus');
     setErrorMessage('');
     return;
   }
 
+  // Return Contact header and contact form
   return (
     <div className="d-flex flex-column align-items-center">
       <h1>Contact</h1>
       <form className="col-10 col-xl-6">
+        {/* Name input field */}
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
           <input value={name} type="text" className="form-control" id="name" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
+        {/* Email input field */}
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email Address</label>
           <input value={email} type="email" className="form-control" id="email" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
+        {/* Message textarea field */}
         <div className="mb-3">
           <label htmlFor="message" className="form-label">Message</label>
           <textarea value={message} className="form-control" id="message" rows="3" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}></textarea>
@@ -100,6 +106,7 @@ export default function Contact() {
         <button type="submit" className="btn" onClick={handleFormSubmit}><h5 className="m-0">Submit</h5></button>
       </form>
 
+      {/* Section where errorMessage will be displayed if exists */}
       <div>
         <p className="error-text" id='error-message'>{errorMessage}</p>
       </div>

@@ -15,6 +15,7 @@ label {
     font-size: 1.2rem;
 }
 
+/* Button color and hover effect */
 button {
     color: var(--yellow) !important;
     background-color: var(--purple) !important;
@@ -24,6 +25,7 @@ button:hover {
     opacity: 75%;
 }
 
+/* Error message */
 .error-text {
     font-size: 1.5rem;
 }

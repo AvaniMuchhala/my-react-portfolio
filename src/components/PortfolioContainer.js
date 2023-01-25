@@ -7,8 +7,10 @@ import Resume from './pages/Resume';
 import Footer from './Footer';
 
 export default function PortfolioContainer() {
+  // By default, load About page (set as initial value)
   const [currentPage, setCurrentPage] = useState('About');
 
+  // Return functional component to render appropriate page
   const renderContent = () => {
     if (currentPage === 'About') {
       return <About />;
@@ -26,6 +28,7 @@ export default function PortfolioContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
+  // Render the header, main content of page, and footer
   return (
     <div>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />

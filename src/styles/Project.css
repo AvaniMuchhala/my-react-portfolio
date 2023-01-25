@@ -1,15 +1,15 @@
+/* Animate project cards with transition */
 .card {
     background-color: var(--green) !important;
     border: var(--green) solid 1px;
     height: 15rem;
-    /* transition: .5s ease; */
     -webkit-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
     position: relative;
 }
 
+/* Animate project images with transition */
 .card-img {
-    /* width: 100%; */
     height: 100%;
     object-fit: cover !important;
     backface-visibility: hidden;
@@ -19,15 +19,16 @@
     position: relative;
 }
 
+/* Upon hovering over project card, make image opaque, show box shadow/border, and shrink image */
 .card:hover img{
     opacity: 0.3;
     box-shadow: 0 0 0 5px var(--purple);
-    /* transition: .5s ease; */
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
 }
 
+/* Set styles/animation of box with project title and icons/links, hide box initially */
 .middle {
     background-color: var(--yellow);
     color: var(--purple);
@@ -42,6 +43,7 @@
     border-radius: 10px;
 }
 
+/* Upon hovering over project card, reveal box with title and icon */
 .card:hover .middle {
     opacity: 1;
 }
