@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../../styles/Contact.css';
 
 // Helper function to check if email is valid
 function validateEmail(email) {
@@ -78,31 +79,31 @@ export default function Contact() {
   }
 
   return (
-    <div>
+    <div className="d-flex flex-column align-items-center">
       <h1>Contact</h1>
-      <form>
+      <form className="col-10 col-xl-6">
         <div className="mb-3">
           <label for="name" className="form-label">Name</label>
-          <input value={name} type="text" className="form-control" id="name" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}/>
+          <input value={name} type="text" className="form-control" id="name" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
         <div className="mb-3">
           <label for="email" className="form-label">Email Address</label>
-          <input value={email} type="email" className="form-control" id="email" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}/>
+          <input value={email} type="email" className="form-control" id="email" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
         <div className="mb-3">
           <label for="message" className="form-label">Message</label>
-          <input value={message} type="text" className="form-control" id="message" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}/>
+          <input value={message} type="text" className="form-control" id="message" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
-        <button type="submit" className="btn btn-primary" onClick={handleFormSubmit}>Submit</button>
+        <button type="submit" className="btn" onClick={handleFormSubmit}>Submit</button>
       </form>
-      
-        <div>
-          <p className="error-text" id='error-message'>{errorMessage}</p>
-        </div>
-      
+
+      <div>
+        <p className="error-text" id='error-message'>{errorMessage}</p>
+      </div>
+
     </div>
   );
 }
