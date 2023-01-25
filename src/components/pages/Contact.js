@@ -83,21 +83,21 @@ export default function Contact() {
       <h1>Contact</h1>
       <form className="col-10 col-xl-6">
         <div className="mb-3">
-          <label for="name" className="form-label">Name</label>
+          <label htmlFor="name" className="form-label">Name</label>
           <input value={name} type="text" className="form-control" id="name" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
         <div className="mb-3">
-          <label for="email" className="form-label">Email Address</label>
+          <label htmlFor="email" className="form-label">Email Address</label>
           <input value={email} type="email" className="form-control" id="email" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
         <div className="mb-3">
-          <label for="message" className="form-label">Message</label>
-          <input value={message} type="text" className="form-control" id="message" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
+          <label htmlFor="message" className="form-label">Message</label>
+          <textarea value={message} className="form-control" id="message" rows="3" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}></textarea>
         </div>
 
-        <button type="submit" className="btn" onClick={handleFormSubmit}>Submit</button>
+        <button type="submit" className="btn" onClick={handleFormSubmit}><h5 className="m-0">Submit</h5></button>
       </form>
 
       <div>

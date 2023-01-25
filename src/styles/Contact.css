@@ -11,6 +11,10 @@ form {
     border: 4px solid
 }
 
+label {
+    font-size: 1.2rem;
+}
+
 button {
     color: var(--yellow) !important;
     background-color: var(--purple) !important;
@@ -20,8 +24,6 @@ button:hover {
     opacity: 75%;
 }
 
-/* @media screen and (min-width: 1080px) {
-    form {
-        width
-    }
-} */
+.error-text {
+    font-size: 1.5rem;
+}
