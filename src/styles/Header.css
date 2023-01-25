@@ -1,6 +1,6 @@
 header {
-    color: #A3C4BC;
-    background-color: #413C58;
+    color: var(--teal);
+    background-color: var(--purple);
     width: 100%;
 }
 

@@ -1,5 +1,9 @@
 .nav-item a {
-    color: #A3C4BC;
+    color: var(--teal);
+}
+
+.nav-item a:hover {
+    color: var(--yellow);
 }
 
 .nav {

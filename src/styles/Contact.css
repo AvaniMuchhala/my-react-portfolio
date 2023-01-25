@@ -4,7 +4,7 @@ h1 {
 }
 
 form {
-    background-color: #F2E7C9;
+    background-color: var(--yellow);
     margin: 1.5rem;
     padding: 1.5rem;
     border-radius: 2rem;
@@ -12,8 +12,8 @@ form {
 }
 
 button {
-    color: #F2E7C9 !important;
-    background-color: #413C58 !important;
+    color: var(--yellow) !important;
+    background-color: var(--purple) !important;
 }
 
 button:hover {

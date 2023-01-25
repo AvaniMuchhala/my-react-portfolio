@@ -1,0 +1,16 @@
+.resume-btn {
+    margin: 1.2rem !important;
+}
+
+.skills {
+    background-color: var(--yellow);
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: 4px solid;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}

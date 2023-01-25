@@ -1,6 +1,6 @@
 footer {
-    color: #A3C4BC;
-    background-color: #413C58;
+    color: var(--teal);
+    background-color: var(--purple);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -11,5 +11,9 @@ footer {
 .fa-brands, .fa-solid {
     font-size: 3rem;
     margin: 1rem;
-    color: #A3C4BC;
+    color: var(--teal);
+}
+
+.footer-icon:hover {
+    color: var(--yellow);
 }
