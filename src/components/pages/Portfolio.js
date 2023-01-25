@@ -23,15 +23,36 @@ const projects = [
     title: 'Tech Blog',
     deployed: 'https://avani-tech-blog.herokuapp.com/',
     github: 'https://github.com/AvaniMuchhala/tech-blog',
+    image: projectImage2
+  },
+  {
+    id: 4,
+    title: 'Tech Blog',
+    deployed: 'https://avani-tech-blog.herokuapp.com/',
+    github: 'https://github.com/AvaniMuchhala/tech-blog',
     image: projectImage1
+  },
+  {
+    id: 5,
+    title: 'Tech Blog',
+    deployed: 'https://avani-tech-blog.herokuapp.com/',
+    github: 'https://github.com/AvaniMuchhala/tech-blog',
+    image: projectImage1
+  },
+  {
+    id: 6,
+    title: 'Tech Blog',
+    deployed: 'https://avani-tech-blog.herokuapp.com/',
+    github: 'https://github.com/AvaniMuchhala/tech-blog',
+    image: projectImage2
   }
 ];
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="d-flex flex-column align-items-center">
       <h1>Portfolio</h1>
-      <section>
+      <section className="row col-10 d-flex flex-row flex-wrap justify-content-center">
         {projects.map(project => (
           <Project title={project.title} deployed={project.deployed} github={project.github} image={project.image} key={project.id} />
         ))}
