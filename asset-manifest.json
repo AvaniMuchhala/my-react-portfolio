@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-react-portfolio/static/css/main.0f0bdcc6.css",
+    "main.js": "/my-react-portfolio/static/js/main.e95fdffb.js",
+    "static/media/word-of-my-life-img.png": "/my-react-portfolio/static/media/word-of-my-life-img.4b0e3ebbc1558b1affe2.png",
+    "static/media/weather-dashboard-img.png": "/my-react-portfolio/static/media/weather-dashboard-img.9153e226c4e10056bfa2.png",
+    "static/media/workout-tracker-img.png": "/my-react-portfolio/static/media/workout-tracker-img.631c65b0616dfadc67a9.png",
+    "static/media/resume.pdf": "/my-react-portfolio/static/media/resume.c3f2c5ddfec6a6ccc980.pdf",
+    "static/media/coding-quiz-img.png": "/my-react-portfolio/static/media/coding-quiz-img.f2229a65ba09d524ae6d.png",
+    "static/media/tech-blog-img.png": "/my-react-portfolio/static/media/tech-blog-img.e6e06fa8abfad90f4871.png",
+    "static/media/text-editor-img.png": "/my-react-portfolio/static/media/text-editor-img.8a85d54780cc4ad2dfb8.png",
+    "static/media/profile-pic.jpg": "/my-react-portfolio/static/media/profile-pic.e00bf7e391e1119d5e4f.jpg",
+    "index.html": "/my-react-portfolio/index.html",
+    "main.0f0bdcc6.css.map": "/my-react-portfolio/static/css/main.0f0bdcc6.css.map",
+    "main.e95fdffb.js.map": "/my-react-portfolio/static/js/main.e95fdffb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f0bdcc6.css",
+    "static/js/main.e95fdffb.js"
+  ]
+}
