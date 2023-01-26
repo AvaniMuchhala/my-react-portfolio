@@ -1,15 +1,16 @@
 # My React Portfolio
 
 ## Description
-This is a single-page application portfolio built using React.js. My portfolio was built to showcase my work and skills to aid me in my job search. My portfolio includes a brief description about myself, my past projects, my resume, and ways to contact me. Building this portfolio helped me practice React.js.
+This is a single-page application portfolio built using React.js. My portfolio showcases my work and skills to aid me in my job search. My portfolio includes a brief description about myself, my past projects, my resume, and ways to contact me. Building this portfolio helped me practice React.js.
 
 ## Usage
 
-Check out my portfolio:
+Check out my portfolio: https://avanimuchhala.github.io/my-react-portfolio/
 
-Once on my portfolio, use the navigation bar to view the corresponding section on the site. Upon hovering over the individual projects in the "Portfolio" section, you can click on the project title to view the deployed app or you can click on the GitHub icon to view the corresponding GitHub repository. There is also a contact form (not working at the moment). Click on the icons in the footer to email me or check out my LinkedIn or GitHub!
+Once on my portfolio, use the navigation bar to view the corresponding section on the site. Upon hovering over the individual projects in the "Portfolio" section, you can click on the project title to view the deployed app or you can click on the GitHub icon to view the corresponding GitHub repository. There is also a contact form (not working at the moment). Click on the icons in the footer to email me or to check out my LinkedIn or GitHub!
 
-Below is an animation navigating through my portfolio:
+Below is an animation demonstrating my portfolio:
+![portfolio-demo-gif](./assets/react-portfolio-demo.gif)
 
 ## License
 
