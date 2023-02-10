@@ -41,6 +41,7 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 10px;
+    width: 95%;
 }
 
 /* Upon hovering over project card, reveal box with title and icon */
@@ -50,6 +51,7 @@
 
 .github-link {
     color: var(--purple) !important;
+    font-size: 1.8rem !important;
 }
 
 .github-link:hover {
