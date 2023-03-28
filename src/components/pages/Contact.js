@@ -12,6 +12,7 @@ export default function Contact() {
   // State variables for fields in the form
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -28,6 +29,8 @@ export default function Contact() {
       setName(inputValue);
     } else if (inputType === 'email') {
       setEmail(inputValue);
+    } else if (inputType === 'subject') {
+      setSubject(inputValue);
     } else {
       setMessage(inputValue);
     }
@@ -54,6 +57,7 @@ export default function Contact() {
     // Clear out input after successful form submission
     setName('');
     setEmail('');
+    setSubject('');
     setMessage('');
     setErrorMessage('');
   }
@@ -77,6 +81,11 @@ export default function Contact() {
           return;
         }
       }
+    }
+    // If subject input lost focus and empty
+    if (!subject && e.target.id === 'subject') {
+      setErrorMessage('Subject is required.');
+      return;
     }
     // If message input lost focus and empty
     if (!message && e.target.id === 'message') {
@@ -105,6 +114,12 @@ export default function Contact() {
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email Address</label>
           <input value={email} type="email" name="user_email" className="form-control" id="email" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
+        </div>
+
+        {/* Subject input field */}
+        <div className="mb-3">
+          <label htmlFor="subject" className="form-label">Subject</label>
+          <input value={subject} type="subject" name="subject" className="form-control" id="subject" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
         {/* Message textarea field */}
