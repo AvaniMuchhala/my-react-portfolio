@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import '../../styles/Contact.css';
+import emailjs from '@emailjs/browser';
 
 // Helper function to check if email is valid
 function validateEmail(email) {
@@ -13,6 +14,8 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+
+  const form = useRef();
 
   const handleInputChange = (e) => {
     // inputType is either name, email, or message
@@ -38,6 +41,13 @@ export default function Contact() {
       setErrorMessage('Email is invalid.');
       return;
     }
+
+    emailjs.sendForm('contact_service', 'portfolio_contact_form', form.current, 'vl-BUURSLeZ3End79')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
 
     alert('Thank you for your submission!');
 
@@ -84,23 +94,23 @@ export default function Contact() {
   return (
     <div className="d-flex flex-column align-items-center">
       <h1>Contact</h1>
-      <form className="col-10 col-xl-6">
+      <form ref={form} className="col-10 col-xl-6">
         {/* Name input field */}
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
-          <input value={name} type="text" className="form-control" id="name" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
+          <input value={name} type="text" name="user_name" className="form-control" id="name" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
         {/* Email input field */}
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email Address</label>
-          <input value={email} type="email" className="form-control" id="email" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
+          <input value={email} type="email" name="user_email" className="form-control" id="email" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur} />
         </div>
 
         {/* Message textarea field */}
         <div className="mb-3">
           <label htmlFor="message" className="form-label">Message</label>
-          <textarea value={message} className="form-control" id="message" rows="3" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}></textarea>
+          <textarea value={message} name="message" className="form-control" id="message" rows="3" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}></textarea>
         </div>
 
         <button type="submit" className="btn" onClick={handleFormSubmit}><h5 className="m-0">Submit</h5></button>
