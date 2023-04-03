@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePDF from '../../assets/resume-v2.pdf';
+import resumePDF from '../../assets/resume-v3.pdf';
 import '../../styles/Resume.css';
 
 export default function Resume() {
@@ -16,11 +16,14 @@ export default function Resume() {
                     <li>CSS/Bootstrap</li>
                     <li>React.js</li>
                     <li>Node.js</li>
+                    <li>Express.js</li>
                     <li>MySQL</li>
                     <li>MongoDB</li>
+                    <li>GraphQL</li>
                     <li>Java</li>
+                    <li>Jest Unit Testing</li>
                     <li>MATLAB</li>
-                    <li>GitHub/Git</li>
+                    <li>Git/GitHub</li>
                 </ul>
             </section>
 
