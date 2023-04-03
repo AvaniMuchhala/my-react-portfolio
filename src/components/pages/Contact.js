@@ -15,6 +15,7 @@ export default function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [showModal, setShowModal] = useState(false);
 
   const form = useRef();
 
@@ -52,7 +53,7 @@ export default function Contact() {
         console.log(error.text);
       });
 
-    alert('Thank you for your submission!');
+    setShowModal(true);
 
     // Clear out input after successful form submission
     setName('');
@@ -128,12 +129,26 @@ export default function Contact() {
           <textarea value={message} name="message" className="form-control" id="message" rows="3" onChange={handleInputChange} onFocus={handleOnFocus} onBlur={handleOnBlur}></textarea>
         </div>
 
-        <button type="submit" className="btn" onClick={handleFormSubmit}><h5 className="m-0">Submit</h5></button>
+        <button type="submit" className="btn" data-toggle="modal" data-target="#exampleModal" onClick={handleFormSubmit}><h5 className="m-0">Submit</h5></button>
       </form>
 
       {/* Section where errorMessage will be displayed if exists */}
       <div>
         <p className="error-text" id='error-message'>{errorMessage}</p>
+      </div>
+
+      {/* Modal popup after successful contact form submission */}
+      <div className="modal" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalTitle" aria-hidden="true" style={{ display: showModal ? 'block' : 'none'}}>
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-body">
+              <h4>Thank you for your submission!</h4>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={() => setShowModal(false)}>Close</button>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
