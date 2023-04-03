@@ -1,17 +1,26 @@
 import React from 'react';
 import Project from '../Project';
 // Import image URLs for project covers
+import journeyJournalsImg from '../../assets/journey-journals-img.png';
 import workoutTrackerImg from '../../assets/workout-tracker-img.png';
 import wordLifeImg from '../../assets/word-of-my-life-img.png';
 import techBlogImg from '../../assets/tech-blog-img.png';
 import textEditorImg from '../../assets/text-editor-img.png';
 import weatherDashboardImg from '../../assets/weather-dashboard-img.png';
-import codingQuizImg from '../../assets/coding-quiz-img.png';
 
 // Information about each project (i.e. title, links, images)
 const projects = [
   {
     id: 1,
+    title: 'Journey Journals',
+    deployed: 'https://journey-journals-2023.herokuapp.com/',
+    github: 'https://github.com/AvaniMuchhala/journey-journals',
+    image: journeyJournalsImg,
+    summary: 'Social media platform for travelers to post about their adventures, interact with other users\' posts on their feed, and follow/block and message other users',
+    tools: 'MERN Stack: MongoDB/Mongoose, Express.js, React.js, Node.js, GraphQL; Cloudinary API'
+  },
+  {
+    id: 2,
     title: 'Workout Tracker',
     deployed: 'https://workout-tracker-2023.herokuapp.com/',
     github: 'https://github.com/AvaniMuchhala/workout-tracker',
@@ -20,16 +29,16 @@ const projects = [
     tools: 'HTML, CSS/Bootstrap, JavaScript, Node.js, Express.js, MySQL/Sequelize, Handlebars.js'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Word of My Life',
     deployed: 'https://avanimuchhala.github.io/word-of-my-life/',
     github: 'https://github.com/AvaniMuchhala/word-of-my-life',
     image: wordLifeImg,
     summary: 'App that generates random word of the day or allows users to search any word, and displays info and related media about that word to make learning new words fun',
-    tools: 'HTML, CSS/Bulma, JavaScript, multiple third-party APIs'
+    tools: 'HTML, CSS/Bulma, JavaScript, APIs: Wordnik, Merriam Webster, Movie Database, Open Library, RAWG Video Games'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Tech Blog',
     deployed: 'https://avani-tech-blog.herokuapp.com/',
     github: 'https://github.com/AvaniMuchhala/tech-blog',
@@ -38,7 +47,7 @@ const projects = [
     tools: 'HTML, CSS/Bootstrap, JavaScript, Node.js, Express.js, MySQL/Sequelize, Handlebars.js'
   },
   {
-    id: 4,
+    id: 5,
     title: 'J.A.T.E (Text Editor)',
     deployed: 'https://warm-lake-93524.herokuapp.com/',
     github: 'https://github.com/AvaniMuchhala/text-editor',
@@ -47,22 +56,13 @@ const projects = [
     tools: 'Node.js, Express.js, Web Manifest, Service Workers, Cache API, IndexedDB'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Weather Dashboard',
     deployed: 'https://avanimuchhala.github.io/weather-dashboard/',
     github: 'https://github.com/AvaniMuchhala/weather-dashboard',
     image: weatherDashboardImg,
     summary: 'Displays current weather and 5-day forecast for any city that user searches and saves any searched cities. Built so that users can plan a trip based on the weather outlook in their city.',
     tools: 'HTML, CSS, JavaScript, OpenWeatherMap API, Day.js'
-  },
-  {
-    id: 6,
-    title: 'Coding Quiz',
-    deployed: 'https://avanimuchhala.github.io/coding-quiz/',
-    github: 'https://github.com/AvaniMuchhala/coding-quiz',
-    image: codingQuizImg,
-    summary: 'Timed quiz on JavaScript fundamentals that stores each player\'s scores. Allow coding bootcamp students to test their knowledge and gauge their progress compared to peers.',
-    tools: 'HTML, CSS, JavaScript'
   }
 ];
 
