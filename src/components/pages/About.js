@@ -24,7 +24,7 @@ export default function About() {
           <br></br>
 
           <br></br>
-          After college ended, I wanted to delve deeper into computer science, since a lot of my work in college required some form of programming skills. However, I felt like there were some gaps in my knowledge. Thus, I enrolled in University of Pennsylvania's Full-stack Web Development Boot Camp and just recently graduated in February 2023. The 3-month boot camp was a fast-paced learning environment where I built a stronger foundation in coding while exploring a completely different subfield of computer science, was exposed to various tools/technologies, and learned how to pick up new skills quickly. 
+          After college ended, I wanted to delve deeper into computer science, since a lot of my work in college required some form of programming skills. However, I felt like there were some gaps in my knowledge. Thus, I enrolled in University of Pennsylvania's Full-stack Web Development Boot Camp and just recently graduated in February 2023. The 3-month boot camp was a fast-paced learning environment where I built a stronger foundation in coding while exploring a completely different domain of computer science, was exposed to various tools/technologies, and learned how to pick up new skills quickly. 
           <br></br>
 
           <br></br>
