@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePDF from '../../assets/resume-v3.pdf';
+import resumePDF from '../../assets/cv-1.pdf';
 import '../../styles/Resume.css';
 
 export default function Resume() {
@@ -13,7 +13,7 @@ export default function Resume() {
                 <ul className="p-0">
                     <li>JavaScript</li>
                     <li>HTML</li>
-                    <li>CSS/Bootstrap</li>
+                    <li>CSS</li>
                     <li>React.js</li>
                     <li>Node.js</li>
                     <li>Express.js</li>
@@ -21,9 +21,12 @@ export default function Resume() {
                     <li>MongoDB</li>
                     <li>GraphQL</li>
                     <li>Java</li>
-                    <li>Jest Unit Testing</li>
+                    <li>Python</li>
                     <li>MATLAB</li>
                     <li>Git/GitHub</li>
+                    <li>Azure DevOps</li>
+                    <li>LabVantage LIMS</li>
+                    <li>3D Slicer Software</li>
                 </ul>
             </section>
 
